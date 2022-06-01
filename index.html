@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+
+    <!-- adapter la largeur du viewport(espace visible du page web) a celui de l'appareil => rendre responsive-->
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <!--initiale-scale = zoom (1x)-->
+
+    <title> Révision bootstrap </title>
+    <link rel="stylesheet" href="bootstrap-5.0.2-dist\css\bootstrap.min.css">
+    <script src="bootstrap-5.0.2-dist\js\bootstrap.min.js"></script>
+</head>
+
+<body>
+    <div class="container" style="background: red;">
+        <h1> Ma page bootstrap (container)</h1>
+    </div> <br>
+    <div class="container-fluid" style="background: yellow;">
+        <h2> container-fluid : prend toute la largeur du page</h2>
+    </div>
+    <br>
+
+    <!-- 
+        taille du viewport:
+        XS ( <575px ) => Phone (eXtraSmall)
+        SM ( >=575px ) => Tablet (SMall)
+        MD ( >=768px ) => Desktop (MeDium)
+        LG ( >=992px ) => Ecran Geant (LarGe)
+        XL ( >=1200px)
+     -->
+
+
+    <!--GRID SYSTEM-->
+    <div class="container">
+        <div class="row">
+            <!-- Bootstrap divise sa largeur d'ecran en 12 colonnes et si on ne specifie pas -->
+            <!-- organiser par taille du viewport (phone, tablet, desktop, Ecran geant)-->
+            <div id="cadre1" class="col-md-6 col-lg-4 col-xl-3">
+                <!-- quand ca arrive a MD(768px) la "div" prend 6/12 colonnes-->
+                <h1 style="font-size: xx-large; border: 1px solid gray;font-weight:800;text-align:center;">
+
+                    voici block 1
+                </h1>
+            </div>
+            <div id="cadre2" class="col-md-6 col-lg-4 col-xl-3">
+                <!-- quand ca arrive a MD(768px) la "div" prend 6/12 colonnes-->
+                <h1 style="font-size: xx-large;border: 1px solid gray;font-weight:800;text-align:center;">
+
+                    voici block 2
+                </h1>
+            </div>
+            <div id="cadre3" class="col-md-6 col-lg-4 col-xl-3">
+                <!-- quand ca arrive a MD(768px) la "div" prend 6/12 colonnes-->
+                <h1 style="font-size: xx-large;border: 1px solid gray;font-weight:800;text-align:center;">
+
+                    voici block 3
+                </h1>
+            </div>
+            <div id="cadre4" class="col-md-6 col-lg-4 col-xl-3">
+                <!-- quand ca arrive a MD(768px) la "div" prend 6/12 colonnes-->
+                <h1 style="font-size: xx-large;border: 1px solid gray;font-weight:800;text-align:center;">
+
+                    voici block 4
+                </h1>
+            </div>
+            <div id="cadre5" class="col-md-6 col-lg-4 col-xl-3">
+                <!-- quand ca arrive a MD(768px) la "div" prend 6/12 colonnes-->
+                <h1 style="font-size: xx-large;border: 1px solid gray;font-weight:800;text-align:center;">
+
+                    voici block 5
+                </h1>
+            </div>
+            <div id="cadre6" class="col-md-6 col-lg-4 col-xl-3">
+                <!-- quand ca arrive a MD(768px) la "div" prend 6/12 colonnes-->
+                <h1 style="font-size: xx-large;border: 1px solid gray;font-weight:800;text-align:center;">
+
+                    voici block 6
+                </h1>
+            </div>
+            <div id="cadre7" class="col-md-6 col-lg-4 col-xl-3">
+                <!-- quand ca arrive a MD(768px) la "div" prend 6/12 colonnes-->
+                <h1 style="font-size: xx-large;border: 1px solid gray;font-weight:800;text-align:center;">
+
+                    voici block 7
+                </h1>
+            </div>
+            <div id="cadre8" class="col-md-6 col-lg-4 col-xl-3">
+                <!-- quand ca arrive a MD(768px) la "div" prend 6/12 colonnes-->
+                <h1 style="font-size: xx-large;border: 1px solid gray;font-weight:800;text-align:center;">
+
+                    voici block 8
+                </h1>
+            </div>
+        </div>
+    </div>
+    <br>
+    <div class="dropdown">
+        <button type="button" class="btn btn-success dropdown-toggle" data-toggle="dropdown"> prenom
+            mpangalatr'akoho</button>
+
+        <ul class="dropdown-menu">
+            <li> <a href="#">Karata</a> </li>
+            <li> <a href="#">Fayonne</a> </li>
+            <li> <a href="#">Geda MIB</a> </li>
+            <li> <a href="#">Barinjaka</a> </li>
+        </ul>
+    </div>
+
+
+</body>
+
+</html>
